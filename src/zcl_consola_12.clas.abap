@@ -27,5 +27,9 @@ CLASS zcl_consola_12 IMPLEMENTATION.
 
        out->write( lv_ficha ).
 
+
+
+
+
   ENDMETHOD.
 ENDCLASS.
