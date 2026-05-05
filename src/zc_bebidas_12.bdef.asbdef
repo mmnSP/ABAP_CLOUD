@@ -1,0 +1,13 @@
+projection;
+strict ( 1 );
+
+//authorization master( global ) es el el behavior definition principal
+//no en el projection
+
+define behavior for ZC_BEBIDAS_12 alias Bebidas
+{
+  use create;
+  use update;
+  use delete;
+
+}

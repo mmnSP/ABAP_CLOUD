@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition RAP app bebidas'
+define service ZUI_BEBIDAS_12 {
+  expose ZC_BEBIDAS_12 as Bebidas;
+}
