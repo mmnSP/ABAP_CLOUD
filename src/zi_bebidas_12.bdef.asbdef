@@ -1,0 +1,25 @@
+managed implementation in class zbp_i_bebidas_12 unique;
+strict ( 1 );
+
+define behavior for ZI_BEBIDAS_12 alias Bebidas//alias <alias_name>
+persistent table zbebidas_12
+lock master
+authorization master ( global )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Codigo;
+
+mapping for zbebidas_12
+{
+    Codigo = codigo;
+    Nombre = nombre;
+    Tipo = tipo;
+    Origen = origen;
+    Graduacion = graduacion;
+    Precio = precio;
+
+}
+}

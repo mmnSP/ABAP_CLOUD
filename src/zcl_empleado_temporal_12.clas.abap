@@ -6,10 +6,31 @@ CLASS zcl_empleado_temporal_12 DEFINITION
 
   PUBLIC SECTION.
 
- DATA:  horas TYPE i,
+ DATA:
+        horas TYPE i,
         precio_hora TYPE p DECIMALS 2.
 
-    METHODS: get_ficha REDEFINITION.
+ METHODS:
+
+*    METHODS: constructor IMPORTING i_nombre     TYPE string
+*                              i_dni        TYPE string
+*                              i_salario_base TYPE i
+*                              i_horas        TYPE i
+*                              i_precio_hora  TYPE p DECIMALS 2,
+
+
+"Esto pondría en metodo, lo pongo aqui porque sino no me deja guardar:
+*
+* constructor.         "izq parametro constructor del padre
+*                            "derch parametro constructor del hijo
+*        super->constructor( i_nombre = i_nombre
+*                            i_dni = i_dni
+*                            i_salario_base = i_salario_base).
+*
+*            me->horas = i_horas.
+*            me->precio_hora = i_precio_hora.
+
+             get_ficha REDEFINITION.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -18,6 +39,7 @@ ENDCLASS.
 
 
 CLASS zcl_empleado_temporal_12 IMPLEMENTATION.
+
 
 
 METHOD get_ficha.

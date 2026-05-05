@@ -28,6 +28,9 @@ METHOD get_salario_base.
 
     rv_salario_base = lv_salario_base * 14.
 
+"Arreglar lo del salario base porque no está en rs_ficha, no va a salir. Y también falta el constructor
+"porque sino me coge el salario del padre y el fijo puede que tenga otro difrente.
+
   ENDMETHOD.
 
 METHOD get_ficha.
