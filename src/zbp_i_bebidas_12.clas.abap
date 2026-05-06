@@ -1,15 +1,19 @@
-class ZBP_I_BEBIDAS_12 definition
-  public
-  abstract
-  final
-  create public .
+CLASS zbp_i_bebidas_12 DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_bebidas_12.
 
-public section.
-protected section.
-private section.
+*PUBLIC SECTION.
+*METHODS global_authorization
+*  IMPORTING
+*    keys TYPE REQUEST FOR GLOBAL AUTHORIZATION
+*  RESULT
+*    result TYPE RESPONSE FOR GLOBAL AUTHORIZATION.
+*
+*PRIVATE SECTION.
+
+
 ENDCLASS.
 
+CLASS zbp_i_bebidas_12 IMPLEMENTATION.
 
 
-CLASS ZBP_I_BEBIDAS_12 IMPLEMENTATION.
+
 ENDCLASS.

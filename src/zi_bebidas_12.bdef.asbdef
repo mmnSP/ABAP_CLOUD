@@ -4,6 +4,7 @@ strict ( 1 );
 define behavior for ZI_BEBIDAS_12 alias Bebidas//alias <alias_name>
 persistent table zbebidas_12
 lock master
+//implementation in class ZBP_I_BEBIDAS_12
 authorization master ( global )
 //etag master <field_name>
 {

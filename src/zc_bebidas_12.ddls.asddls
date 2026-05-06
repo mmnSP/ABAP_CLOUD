@@ -21,11 +21,11 @@ as projection on  ZI_BEBIDAS_12
   @UI.lineItem: [{ position: 40, label: 'Origen' }]
   Origen,
   
-  @UI.selectionField: [{ position: 50 }]
+//  @UI.selectionField: [{ position: 50 }]
   @UI.lineItem: [{ position: 50, label: 'Graduacion' }]
   Graduacion,
   
-  @UI.selectionField: [{ position: 60 }]
+//  @UI.selectionField: [{ position: 60 }]
   @UI.lineItem: [{ position: 60, label: 'Precio' }]
   Precio  
 }
