@@ -1,0 +1,24 @@
+managed implementation in class zbp_i_servicio_mmn unique;
+strict ( 2 );
+
+define behavior for ZI_SERVICIO_MMN //alias <alias_name>
+persistent table zdw_services_mmn//persistent table <???>
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) id_servicio;
+//mapping for zbebidas_12
+//{
+//    Codigo = codigo;
+//    Nombre = nombre;
+//    Tipo = tipo;
+//    Origen = origen;
+//    Graduacion = graduacion;
+//    Precio = precio;
+//
+//}
+}

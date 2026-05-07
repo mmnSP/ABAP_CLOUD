@@ -1,0 +1,23 @@
+CLASS zcl_dw_manager_12 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+*METHODS: create IMPORTING
+
+*ENDMETHOD.
+    INTERFACES if_oo_adt_classrun .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_dw_manager_12 IMPLEMENTATION.
+
+
+  METHOD if_oo_adt_classrun~main.
+  ENDMETHOD.
+ENDCLASS.

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service ZUI_SERVICIO_MMN {
+  expose ZC_SERVICIO_MMN as Servicio;
+}

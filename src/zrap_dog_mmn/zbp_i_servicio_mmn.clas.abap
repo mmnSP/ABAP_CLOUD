@@ -1,0 +1,5 @@
+CLASS zbp_i_servicio_mmn DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_servicio_mmn.
+ENDCLASS.
+
+CLASS zbp_i_servicio_mmn IMPLEMENTATION.
+ENDCLASS.
