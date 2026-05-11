@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_PROFESIONAL_12'
+@MappingRole: true
+define role ZC_PROFESIONAL_12 {
+  grant select on ZC_PROFESIONAL_12
+  where INHERITING CONDITIONS FROM ENTITY ZR_PROFESIONAL_12 REPLACING { ROOT WITH _BaseEntity };
+}

@@ -1,0 +1,28 @@
+projection implementation in class ZBP_C_PROFESIONAL_12 unique;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZC_PROFESIONAL_12 alias ZcProfesional12
+extensible
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+// action subida_salario result [1] $self;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+
+// Ini Botón Subida de Sueldo
+use action subida_salario;
+use action modificar_profesion;
+// Fin Botón Subida de Sueldo
+
+}

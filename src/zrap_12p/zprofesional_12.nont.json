@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZPROFESIONAL_12",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZPROFESIONAL_12",
+  "sapObjectType": "ZPROFESIONAL_12",
+  "rootNode": true
+}
