@@ -1,7 +1,9 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Vista base RAP perros'
 @Metadata.ignorePropagatedAnnotations: true
-define root view entity ZI_SERVICIO_MMN as select from zdw_services_mmn as serv
+define root view entity ZI_SERVICIO_MMN 
+as select from zdw_services_mmn as serv
+
   inner join zdw_dog_mmn as perro
     on  serv.id_perro = perro.id_perro
 
