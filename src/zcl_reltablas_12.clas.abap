@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_reltablas_12 IMPLEMENTATION.
+CLASS ZCL_RELTABLAS_12 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 

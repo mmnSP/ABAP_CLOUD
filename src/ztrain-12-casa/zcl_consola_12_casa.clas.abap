@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_consola_12_casa IMPLEMENTATION.
+CLASS ZCL_CONSOLA_12_CASA IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -27,39 +27,9 @@ CLASS zcl_calculadora_12 DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_calculadora_12 IMPLEMENTATION.
 
-METHOD CONSTRUCTOR.
-        nombre = i_nombre.
-        numero = i_numero.
-ENDMETHOD.
+CLASS ZCL_CALCULADORA_12 IMPLEMENTATION.
 
-    METHOD get_nombre.
-        o_nombre = nombre.
-    ENDMETHOD.
-
-    METHOD get_numero.
-        o_numero = numero.
-    ENDMETHOD.
-
-    METHOD set_nombre.
-        nombre = i_nombre.
-    ENDMETHOD.
-
-    METHOD sumar.
-           DATA lv_operador TYPE i.
-           o_sumar = numero + lv_operador.
-    ENDMETHOD.
-
-    METHOD restar.
-           DATA lv_operador TYPE i.
-           o_restar = numero - lv_operador.
-    ENDMETHOD.
-
-    METHOD multiplicar.
-           DATA lv_operador TYPE i.
-           o_multiplicar = numero * lv_operador.
-    ENDMETHOD.
 
     METHOD dividir.
            DATA: lv_operador TYPE i,
@@ -74,6 +44,34 @@ ENDMETHOD.
            ENDTRY.
     ENDMETHOD.
 
+
+    METHOD get_numero.
+        o_numero = numero.
+    ENDMETHOD.
+
+
+    METHOD multiplicar.
+           DATA lv_operador TYPE i.
+           o_multiplicar = numero * lv_operador.
+    ENDMETHOD.
+
+
+    METHOD sumar.
+           DATA lv_operador TYPE i.
+           o_sumar = numero + lv_operador.
+    ENDMETHOD.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+  ENDMETHOD.
+
+
+    METHOD set_nombre.
+        nombre = i_nombre.
+    ENDMETHOD.
+
+
     METHOD reset.
     DATA lv_numero TYPE i.
          lv_numero = 0.
@@ -82,8 +80,19 @@ ENDMETHOD.
     ENDMETHOD.
 
 
-  METHOD if_oo_adt_classrun~main.
+    METHOD get_nombre.
+        o_nombre = nombre.
+    ENDMETHOD.
 
-  ENDMETHOD.
 
+    METHOD restar.
+           DATA lv_operador TYPE i.
+           o_restar = numero - lv_operador.
+    ENDMETHOD.
+
+
+METHOD CONSTRUCTOR.
+        nombre = i_nombre.
+        numero = i_numero.
+ENDMETHOD.
 ENDCLASS.

@@ -12,7 +12,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_consola_12_calc IMPLEMENTATION.
+CLASS ZCL_CONSOLA_12_CALC IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 DATA(lo_calculadora) = NEW zcl_calculadora_12( i_nombre = 'Marta' i_numero = 0 ).
 
@@ -26,5 +28,4 @@ DATA: operador TYPE i.
 
 
   ENDMETHOD.
-
 ENDCLASS.

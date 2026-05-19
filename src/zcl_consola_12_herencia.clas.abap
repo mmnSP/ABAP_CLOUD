@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_consola_12_herencia IMPLEMENTATION.
+CLASS ZCL_CONSOLA_12_HERENCIA IMPLEMENTATION.
 
 
  METHOD if_oo_adt_classrun~main.

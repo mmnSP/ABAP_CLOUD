@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_dias_semana_12 IMPLEMENTATION.
+CLASS ZCL_DIAS_SEMANA_12 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

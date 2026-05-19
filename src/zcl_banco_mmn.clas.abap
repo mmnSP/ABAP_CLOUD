@@ -10,7 +10,10 @@ CLASS zcl_banco_mmn DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_banco_mmn IMPLEMENTATION.
+
+
+CLASS ZCL_BANCO_MMN IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -56,10 +59,3 @@ CLASS zcl_banco_mmn IMPLEMENTATION.
 
   ENDMETHOD.
 ENDCLASS.
-
-
-
-
-
-
-

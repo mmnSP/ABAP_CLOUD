@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_tablas_mmn IMPLEMENTATION.
+CLASS ZCL_TABLAS_MMN IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -205,9 +205,4 @@ out->write( lt_viaje ).
 
 
   ENDMETHOD.
-
-
-
-
-
 ENDCLASS.

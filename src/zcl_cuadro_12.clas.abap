@@ -25,37 +25,28 @@ ENDCLASS.
 
 
 
-CLASS zcl_cuadro_12 IMPLEMENTATION.
+CLASS ZCL_CUADRO_12 IMPLEMENTATION.
 
-  METHOD constructor.
-         cuadro = i_cuadro.
-         year = i_year.
-  ENDMETHOD.
 
   METHOD get_cuadro.
          cuadro = o_cuadro.
   ENDMETHOD.
 
+
   METHOD Set_cuadro.
          cuadro = i_cuadro.
   ENDMETHOD.
 
-  METHOD get_YEAR.
-         year = o_year.
+
+  METHOD if_oo_adt_classrun~main.
+"pensar en importing/exporting como una suma: 1+2(importing)=3(exporting).
   ENDMETHOD.
+
 
   METHOD set_year.
          year = i_year.
   ENDMETHOD.
 
-  METHOD exposicion.
-         IF
-         year >= 1800.
-         o_estado = abap_true.
-         ELSE.
-         o_estado = abap_false.
-         ENDIF.
-  ENDMETHOD.
 
   METHOD mostrar_ficha.
   DATA lv_estado TYPE string.
@@ -68,8 +59,24 @@ CLASS zcl_cuadro_12 IMPLEMENTATION.
          o_ficha = |El cuadro { cuadro } del año { year } está { lv_estado }|.
   ENDMETHOD.
 
-  METHOD if_oo_adt_classrun~main.
-"pensar en importing/exporting como una suma: 1+2(importing)=3(exporting).
+
+  METHOD constructor.
+         cuadro = i_cuadro.
+         year = i_year.
   ENDMETHOD.
 
+
+  METHOD exposicion.
+         IF
+         year >= 1800.
+         o_estado = abap_true.
+         ELSE.
+         o_estado = abap_false.
+         ENDIF.
+  ENDMETHOD.
+
+
+  METHOD get_YEAR.
+         year = o_year.
+  ENDMETHOD.
 ENDCLASS.

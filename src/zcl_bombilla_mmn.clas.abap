@@ -10,7 +10,10 @@ CLASS zcl_bombilla_mmn DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_bombilla_mmn IMPLEMENTATION.
+
+
+CLASS ZCL_BOMBILLA_MMN IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 

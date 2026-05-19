@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_consola_bebidas_12 IMPLEMENTATION.
+CLASS ZCL_CONSOLA_BEBIDAS_12 IMPLEMENTATION.
+
 
 METHOD if_oo_adt_classrun~main.
     DELETE FROM zbebidas_12.
@@ -31,5 +32,4 @@ METHOD if_oo_adt_classrun~main.
     out->write( 'Datos cargados OK' ).
 
   ENDMETHOD.
-
 ENDCLASS.

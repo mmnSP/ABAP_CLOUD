@@ -37,7 +37,10 @@ CLASS zcl_consola_dog_mmn DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_consola_dog_mmn IMPLEMENTATION.
+
+
+CLASS ZCL_CONSOLA_DOG_MMN IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     insert_duenos( out ).
@@ -47,8 +50,6 @@ CLASS zcl_consola_dog_mmn IMPLEMENTATION.
     insert_valoraciones( out ).
     out->write( '✔ Carga completa finalizada' ).
   ENDMETHOD.
-
-
 
 
   METHOD insert_duenos.
@@ -80,8 +81,6 @@ CLASS zcl_consola_dog_mmn IMPLEMENTATION.
       out->write( '✘ Error insertando dueños' ).
     ENDIF.
   ENDMETHOD.
-
-
 
 
   METHOD insert_perros.
@@ -124,8 +123,6 @@ CLASS zcl_consola_dog_mmn IMPLEMENTATION.
   ENDMETHOD.
 
 
-
-
   METHOD insert_paseadores.
     DATA lt_paseadores TYPE TABLE OF zdw_walker_mmn.
 
@@ -158,8 +155,6 @@ CLASS zcl_consola_dog_mmn IMPLEMENTATION.
       out->write( '✘ Error insertando paseadores' ).
     ENDIF.
   ENDMETHOD.
-
-
 
 
   METHOD insert_servicios.
@@ -218,7 +213,6 @@ CLASS zcl_consola_dog_mmn IMPLEMENTATION.
   ENDMETHOD.
 
 
-
   METHOD insert_valoraciones.
     DATA lt_valoraciones TYPE TABLE OF zdw_reviews_mmn.
 
@@ -254,12 +248,4 @@ CLASS zcl_consola_dog_mmn IMPLEMENTATION.
       out->write( '✘ Error insertando valoraciones' ).
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.
-
-
-
-
-
-
-

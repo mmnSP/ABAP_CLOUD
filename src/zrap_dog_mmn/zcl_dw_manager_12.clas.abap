@@ -32,7 +32,17 @@ CLASS zcl_dw_manager_12 DEFINITION
                    RETURNING VALUE(rv_exito) TYPE abap_bool.
 ENDCLASS.
 
-CLASS zcl_dw_manager_12 IMPLEMENTATION.
+
+
+CLASS ZCL_DW_MANAGER_12 IMPLEMENTATION.
+
+
+  METHOD get_servicios.
+    SELECT * FROM zdw_services_mmn
+        WHERE id_perro = @i_id_perro
+        INTO TABLE @t_servicios.
+  ENDMETHOD.
+
 
   METHOD crear_servicio.
 
@@ -103,6 +113,11 @@ CLASS zcl_dw_manager_12 IMPLEMENTATION.
   ENDMETHOD.
 
 
+  METHOD check_paseador.
+
+  ENDMETHOD.
+
+
   METHOD check_perro.
 
     SELECT SINGLE * FROM zdw_dog_mmn
@@ -115,6 +130,7 @@ CLASS zcl_dw_manager_12 IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
+
 
   METHOD check_estado.
 
@@ -129,18 +145,4 @@ CLASS zcl_dw_manager_12 IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
-
-  METHOD check_paseador.
-
-  ENDMETHOD.
-
-  METHOD get_servicios.
-    SELECT * FROM zdw_services_mmn
-        WHERE id_perro = @i_id_perro
-        INTO TABLE @t_servicios.
-  ENDMETHOD.
-
-
-
-
 ENDCLASS.

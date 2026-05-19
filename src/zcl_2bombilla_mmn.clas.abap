@@ -22,24 +22,18 @@ ENDCLASS.
 
 
 
-CLASS zcl_2bombilla_mmn IMPLEMENTATION.
+CLASS ZCL_2BOMBILLA_MMN IMPLEMENTATION.
 
-    METHOD get_ubicacion.
-           o_ubicacion = ubicacion.
-    ENDMETHOD.
 
     METHOD set_ubicacion.
            ubicacion = i_ubicacion.
     ENDMETHOD.
 
-    METHOD get_estado.
-           o_estado = estado.
+
+    METHOD get_ubicacion.
+           o_ubicacion = ubicacion.
     ENDMETHOD.
 
-    METHOD constructor.
-           ubicacion = i_ubicacion.
-           estado = abap_false.
-    ENDMETHOD.
 
     METHOD encender.
            IF
@@ -47,10 +41,21 @@ CLASS zcl_2bombilla_mmn IMPLEMENTATION.
            ENDIF.
     ENDMETHOD.
 
+
+    METHOD get_estado.
+           o_estado = estado.
+    ENDMETHOD.
+
+
+    METHOD constructor.
+           ubicacion = i_ubicacion.
+           estado = abap_false.
+    ENDMETHOD.
+
+
     METHOD apagar.
            IF
            estado = abap_false.
            ENDIF.
     ENDMETHOD.
-
 ENDCLASS.

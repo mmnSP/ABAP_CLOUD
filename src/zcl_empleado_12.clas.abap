@@ -26,15 +26,13 @@ ENDCLASS.
 
 
 
-CLASS zcl_empleado_12 IMPLEMENTATION.
+CLASS ZCL_EMPLEADO_12 IMPLEMENTATION.
 
-METHOD constructor.
 
-            me->nombre = i_nombre.
-            me->dni = i_dni.
-            me->salario_base = i_salario_base.
+METHOD get_salario_base.
+            rv_salario_base =  me->salario_base * 14.
 
-ENDMETHOD.
+  ENDMETHOD.
 
 
 METHOD get_ficha.
@@ -44,11 +42,16 @@ METHOD get_ficha.
 
   ENDMETHOD.
 
-METHOD get_salario_base.
-            rv_salario_base =  me->salario_base * 14.
-
-  ENDMETHOD.
 
   METHOD if_oo_adt_classrun~main.
   ENDMETHOD.
+
+
+METHOD constructor.
+
+            me->nombre = i_nombre.
+            me->dni = i_dni.
+            me->salario_base = i_salario_base.
+
+ENDMETHOD.
 ENDCLASS.

@@ -20,7 +20,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_empleado_fijo_12 IMPLEMENTATION.
+CLASS ZCL_EMPLEADO_FIJO_12 IMPLEMENTATION.
+
 
 METHOD get_salario_base.
 
@@ -32,6 +33,7 @@ METHOD get_salario_base.
 "porque sino me coge el salario del padre y el fijo puede que tenga otro difrente.
 
   ENDMETHOD.
+
 
 METHOD get_ficha.
 
@@ -47,7 +49,4 @@ METHOD get_ficha.
                     |Plus de antigüedad: { lv_plus }|.
 
   ENDMETHOD.
-
-
-
 ENDCLASS.

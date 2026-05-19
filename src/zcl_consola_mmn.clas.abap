@@ -10,7 +10,9 @@ CLASS zcl_consola_mmn DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_consola_mmn IMPLEMENTATION.
+
+
+CLASS ZCL_CONSOLA_MMN IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
