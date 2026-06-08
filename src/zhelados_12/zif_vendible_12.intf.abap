@@ -1,4 +1,4 @@
-interface ZIF_VENDIBLE_12
-  public .
+INTERFACE zif_vendible_12
+  PUBLIC .
 
-endinterface.
+ENDINTERFACE.

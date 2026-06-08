@@ -2,18 +2,13 @@ CLASS zcl_consola_bebidas_12 DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
-
   PUBLIC SECTION.
-
     INTERFACES if_oo_adt_classrun .
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
 
-
-
-CLASS ZCL_CONSOLA_BEBIDAS_12 IMPLEMENTATION.
-
+CLASS zcl_consola_bebidas_12 IMPLEMENTATION.
 
 METHOD if_oo_adt_classrun~main.
     DELETE FROM zbebidas_12.
@@ -27,7 +22,6 @@ METHOD if_oo_adt_classrun~main.
                 ( codigo = 134522 nombre = 'Ginebra' tipo = 'Destilada' origen = 'Francia' graduacion = '42.3' precio = 12 )
                 ( codigo = 923456 nombre = 'Whisky' tipo = 'Destilada' origen = 'Escocia' graduacion = '52.5' precio = '15.7' )
     ) ).
-
 
     out->write( 'Datos cargados OK' ).
 

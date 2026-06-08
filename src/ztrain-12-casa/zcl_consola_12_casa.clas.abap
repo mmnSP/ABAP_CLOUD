@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS ZCL_CONSOLA_12_CASA IMPLEMENTATION.
+CLASS zcl_consola_12_casa IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -84,8 +84,6 @@ CLASS ZCL_CONSOLA_12_CASA IMPLEMENTATION.
 *  WHEN OTHERS.
 *    out->write( 'Día no válido' ).
 *ENDSWITCH.
-
-
 
 "-----------------------------------------------------------------------
 *"condicional CASE:

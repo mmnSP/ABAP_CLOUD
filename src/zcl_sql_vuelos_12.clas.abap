@@ -1,14 +1,20 @@
-class ZCL_SQL_VUELOS_12 definition
-  public
-  final
-  create public .
+CLASS zcl_sql_vuelos_12 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+
+    INTERFACES if_oo_adt_classrun .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_SQL_VUELOS_12 IMPLEMENTATION.
+CLASS zcl_sql_vuelos_12 IMPLEMENTATION.
+
+
+  METHOD if_oo_adt_classrun~main.
+  ENDMETHOD.
 ENDCLASS.
