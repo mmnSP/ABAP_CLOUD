@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP Object Node Type ZOO_VET_12",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZOO_VET_12",
+  "sapObjectType": "ZOO_VET_12",
+  "rootNode": true
+}

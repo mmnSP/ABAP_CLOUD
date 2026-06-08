@@ -1,0 +1,139 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'VetID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'VetID'
+annotate view ZC_ZOO_VET_12 with
+{
+  @EndUserText.label: 'VetID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'VetID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'VetID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  VetID;
+  
+  @EndUserText.label: 'Nombre'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Nombre'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Nombre'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Nombre;
+  
+  @EndUserText.label: 'Especialidad'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Especialidad'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Especialidad'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Especialidad;
+  
+  @EndUserText.label: 'Telefono'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Telefono'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Telefono'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Telefono;
+  
+  @EndUserText.label: 'Email'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Email'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Email'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Email;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LocalLastChangedAt;
+}

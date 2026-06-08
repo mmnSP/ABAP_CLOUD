@@ -1,0 +1,51 @@
+managed implementation in class ZBP_R_ZOO_VET_12 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_ZOO_VET_12 alias ZrZooVet12
+persistent table ZZOO_VET_12
+extensible
+draft table ZZOO_VET_12_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   VetID;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   VetID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZZOO_VET_12 corresponding extensible
+  {
+    VetID = VET_ID;
+    Nombre = NOMBRE;
+    Especialidad = ESPECIALIDAD;
+    Telefono = TELEFONO;
+    Email = EMAIL;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}
